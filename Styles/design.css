@@ -1,0 +1,114 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%);
+}
+p{
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.main{
+  display: grid;
+  grid-template-columns: 3.3fr 1fr;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 70px;
+  gap: 1.5rem;
+}
+.top{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.bottom{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.first-testimony{
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 81%;
+}
+.second-testimony{
+  background-color: hsl(217, 19%, 35%);
+}
+.fourth-testimony{
+  background-color: hsl(219, 29%, 14%);
+}
+.third-testimony, .fifth-testimony{
+  background-color: hsl(0, 0%, 100%);
+}
+.first-testimony, .second-testimony, .third-testimony, 
+.fourth-testimony, .fifth-testimony{
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.116);
+}
+.first-testimony-profile, .second-testimony-profile, 
+.third-testimony-profile, .fourth-testimony-profile,
+.fifth-testimony-profile{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.profile-pic, .profile-pic-one{
+  height: 25px;
+  border-radius: 17px;
+  padding: 2px;
+
+  margin-right: 10px;
+}
+.profile-pic{
+  background-color: hsl(263, 92%, 76%);
+}
+.name{
+  color: hsl(0, 0%, 100%);
+}
+.status{
+  color:hsla(0, 0%, 100%, 0.5);
+  font-size: 12px;
+}
+.head, .head-one{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.head{
+  color: white;
+}
+.body{
+  color: hsla(0, 0%, 100%, 0.493);
+}
+.status-one, .body-one{
+  color: hsla(217, 19%, 35%, 0.5);
+}
+.name-one, .head-one{
+  color: hsl(217, 19%, 35%);
+}
+.attribution{
+  font-size: 10px;
+  text-align: center;
+  margin: 20px
+  ;
+}
+
+@media (max-width: 375px){
+  .top, .bottom, .main{
+    grid-template-columns: 1fr;
+  }
+  .main{
+    margin-top: 20px;
+    width: 90%;
+  }
+  .bottom{
+    margin-bottom: 0px;
+  }
+  .body, .body-one{
+    width: 90%;
+  }
+}
